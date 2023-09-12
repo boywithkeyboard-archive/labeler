@@ -10,8 +10,8 @@ inputs:
     required: false
     default: ${{ github.token }}
 branding:
-  icon: 'arrow-up'
-  color: 'blue'
+  icon: 'tag'
+  color: 'gray-dark'
 runs:
   using: 'node20'
   main: 'dist/action.js'
