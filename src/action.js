@@ -26805,6 +26805,7 @@ async function action() {
   const { labels } = (0, import_yaml.parse)(file)
   const existingLabels = (await rest.issues.listLabelsForRepo({
     ...import_github.context.repo,
+    per_page: 100,
   })).data.map(
     (label) => {
       return {
