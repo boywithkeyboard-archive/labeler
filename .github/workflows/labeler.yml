@@ -1,0 +1,19 @@
+name: labeler
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '.github/labeler.yml'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run labeler
+        uses: boywithkeyboard/labeler@dev
