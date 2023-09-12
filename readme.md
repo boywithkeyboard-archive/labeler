@@ -26,7 +26,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
+  labeler:
     runs-on: ubuntu-latest
 
     steps:
