@@ -30,6 +30,7 @@ async function action() {
 
   const existingLabels = (await rest.issues.listLabelsForRepo({
     ...context.repo,
+    per_page: 100,
   })).data.map(
     (label) => {
       return {
