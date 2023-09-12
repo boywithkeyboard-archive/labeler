@@ -28,7 +28,9 @@ async function action() {
 
   const { labels } = parse(file) as { labels: Label[] }
 
-  const existingLabels = (await rest.issues.listLabelsForRepo()).data.map(
+  const existingLabels = (await rest.issues.listLabelsForRepo({
+    ...context.repo,
+  })).data.map(
     (label) => {
       return {
         name: label.name,
