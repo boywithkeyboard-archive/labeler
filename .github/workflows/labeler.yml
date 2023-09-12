@@ -16,4 +16,4 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run labeler
-        uses: boywithkeyboard/labeler@dev
+        uses: boywithkeyboard/labeler@main
