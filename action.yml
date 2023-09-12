@@ -1,0 +1,17 @@
+name: 'labeler'
+description: 'A GitHub action to synchronize labels from a remote or local file.'
+inputs:
+  src:
+    description: 'The file to use as config for labeler.'
+    required: false
+    default: './.github/labeler.yml'
+  token:
+    description: 'GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT).'
+    required: false
+    default: ${{ github.token }}
+branding:
+  icon: 'arrow-up'
+  color: 'blue'
+runs:
+  using: 'node20'
+  main: 'dist/action.js'
