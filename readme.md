@@ -1,6 +1,6 @@
 ## labeler
 
-### Example
+e.g. `./.github/labeler.yml`
 
 ```yaml
 labels:
@@ -12,7 +12,7 @@ labels:
     description: 'Some description.'
 ```
 
-### Workflow
+### Usage
 
 ```yml
 name: labeler
@@ -35,8 +35,6 @@ jobs:
       - name: Run labeler
         uses: boywithkeyboard/labeler@v1
 ```
-
-### Configuration
 
 - `src` _(defaults to `./.github/labeler.yml`)_
 
