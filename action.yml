@@ -1,4 +1,4 @@
-name: 'labeler'
+name: "boywithkeyboard's labeler"
 description: 'A GitHub action to synchronize labels from a remote or local file.'
 inputs:
   src:
